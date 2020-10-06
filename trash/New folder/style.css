@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding : 22px ;
+    box-sizing: border-box;
+    background-color: #164988;
+    font-family: 'Open Sans', sans-serif;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+.logo img{
+
+    height: 17vh;
+    width: auto;
+}
+.company-info{
+    height: 12vh;
+    margin: 0 auto;
+}
+.company-info h2,h3{
+   margin: 0 auto;
+   padding : 0;
+   text-align: center;
+}
+.menu{
+    width: 100%;
+    border-radius: 5px;
+
+}
+.menu ul {
+    display:flex;
+    flex-direction: row;
+    border-radius: 5px;
+    justify-content: flex-end;
+}
+.menu ul li {
+    text-transform: uppercase;
+    background-image:linear-gradient( #3066ac, #103463);
+    color: white;
+    padding: 10px 13px;
+    font-weight: 600;
+}
+.menu ul li:hover{
+    background-image:linear-gradient( white,white);
+    color: #164988;
+    cursor: pointer;
+}
+.content{
+    padding: 8px;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.biggest-img{
+    width: 100%;
+
+}
+.biggest-img img{
+    /* background-image: url(./biggest-img.png); */
+    width: 100%;
+    height: auto;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; */
+    border-radius: 15px;
+}
+.main{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.main-container1{
+    height: auto;
+    width: 15%;
+}
+.search{
+    display: flex;
+    flex-direction: column;
+}
+.search option, select, p, input{
+    margin: 0;
+    padding: 0;
+    margin-top: 7px;
+}
+.search p{
+    font-size: 22px;
+    font-weight: 650;
+    color: #3066ac;
+}
+.search option, select{
+    width: 80%;
+    margin: 10px auto 0 auto;
+    padding: 2px 2px;
+    
+}
+.search input {
+    width: 79%;
+    margin: 10px auto 0 auto;
+    padding: 1px 1px;
+}
+.search input.input2{
+    margin: 10px auto 10px auto;
+    width: 30%;
+    border-radius: 5px;
+}
+.dao-tao,.dichvu {
+    display: flex;
+    flex-direction: column;
+}
+.dao-tao h4{
+    padding: 5px 10px;
+    text-align: center;
+    background-image:linear-gradient( #3066ac, #103463);
+    border-radius: 7px;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+h5, h4, h3, h2, h1{
+    margin: 0;   
+}
+.dao-tao ul{
+    margin-top: 0;
+    padding-top: 0;
+}
+.dao-tao ul li {
+    margin : 7px auto 1px auto;
+    padding: 7px auto 1px auto;
+}
+
+.main-container2{
+    width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+.main-container2 h3{
+    margin: 15px auto 15px auto;
+}
+.products{
+    height: 35vh;
+    width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    align-content: space-around;
+    margin-top: 20px;
+}
+.product {
+    flex-direction: column;
+    width: 35%;
+    height: 17vh;
+    display: flex;
+}
+.product img{
+    width: 35%;
+    height: 15vh;
+    margin: 0 auto;
+}
+.best-selling{
+    height: auto;
+    width: 100%;
+	display: flex;
+	flex-direction: row;
+
+    margin-top: 20px;
+}
+.best-selling-elements{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.best-selling img{
+    margin: 0 auto;
+}
+.logo-partner{
+    height: 22vh;
+}
+.map{
+    margin-top: 15px;
+    width: 100%;
+}
+.footer{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px 0 10px;
+}
+span{
+    float: left;
+    color: red;
+    font-size: 24px;
+    font-weight: 900;
+    box-shadow: 0px 2px rgba(99, 98, 98, 0.5);
+}
