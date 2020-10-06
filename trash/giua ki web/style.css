@@ -39,22 +39,15 @@ a{
 
 
 
-
-
-
-
-
-
-
-
-
-
 .menu{
-
     width: 100%;
     background-color: #ffccff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .menu0{
+    border: 1px solid black;
     margin-bottom: 20px;
     width: 100%;
     background-color: #ffccff;
@@ -104,9 +97,44 @@ ul,li{
 }
 
 .main{
-    width: 100%;
+    margin-left: 3px;
+    padding: 10px 0;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
     padding-left: 10px;
+}
+.lua-chon{
+    margin: 0 auto;
 }
 .main .lua-chon div{
     border-radius: 20px;
+}
+.san-pham{
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.sp{
+    display: inline-block;
+    flex-direction: column;
+    border: 1px solid #dadada;
+    margin: 5px;
+    box-sizing: border-box;
+}
+.sp p {
+    color: #000066;
+    font-size: 16px;
+    height: 22px;
+}
+.sp img {
+    width: 350px;
+}
+.sp:hover p{
+    font-size: 22px;
+    background-color: aquamarine;
+    height: 22px;
 }
