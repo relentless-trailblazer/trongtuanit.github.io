@@ -124,15 +124,17 @@ ul,li{
     border: 1px solid #dadada;
     margin: 5px;
     box-sizing: border-box;
+    width: calc(100%/4.5)
 }
 .sp p {
     color: #000066;
     font-size: 16px;
     height: 22px;
+
 }
-.sp img {
+/* .sp img {
     width: 350px;
-}
+} */
 .sp:hover p{
     font-size: 22px;
     background-color: aquamarine;
