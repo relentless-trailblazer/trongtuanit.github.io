@@ -24,6 +24,7 @@ li{
     font-family: 'Chilanka', cursive;
     font-size: 34px;
     font-weight: 900;
+    transition: 0.4s;
 }
 .header .address span{
     color: #8b338b;
@@ -61,18 +62,22 @@ li{
 .menu li:hover{
     background-color: #492c6f;
     cursor: pointer;
+    transition: 0.4s;
 }
 .point2 .fa-arrow-left{
     color: white;
     background-color: #725494;
+    transition: 0.4s;
 }
 .menu li:hover .fa-arrow-down{
     background-color: #492c6f;
     cursor: pointer;
+    transition: 0.4s;
 }
 .sub-menu li:hover .fa-arrow-left{
     background-color: #d2691e;
     cursor: pointer;
+    
 }
 .point1{
     position: relative;
@@ -156,9 +161,11 @@ li{
     color: white;
     font-size: 18px;
     font-weight: 650;
+    transition: 0.4s;
 }
 .intro .content i{
     background-color:  #301a49;
+    transition: 0.4s;
 }
 .intro .content button:hover{
     color:  #301a49;
