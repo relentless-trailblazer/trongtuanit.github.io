@@ -62,7 +62,7 @@ li{
     background-color: #492c6f;
     cursor: pointer;
 }
-.point2 .fa-arrow-right{
+.point2 .fa-arrow-left{
     color: white;
     background-color: #725494;
 }
@@ -70,7 +70,7 @@ li{
     background-color: #492c6f;
     cursor: pointer;
 }
-.sub-menu li:hover .fa-arrow-right{
+.sub-menu li:hover .fa-arrow-left{
     background-color: #d2691e;
     cursor: pointer;
 }
@@ -100,7 +100,7 @@ li{
 .sub-menu-2{
     display: none;
     position: absolute;
-    left: 100%;
+    right: 100%;
     top: 0%;
     width: 200%;
 }
