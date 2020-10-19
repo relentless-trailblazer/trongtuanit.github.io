@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .display{
+            z-index: 99;
+        }
+        button{
+            padding: 12px 20px;
+            background-color: #c4dfff;
+            border-radius: 7px;
+            border: 0;
+            color: #1f1a41;
+        }
+        button:focus{
+            border-radius: 7px;
+        }
+    </style>
+
+
+
+    <div class="display">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+
+    <pre>
+    {
+        "id": 1,
+        "title": "task 1",
+        "description": "task 1",
+        "type": "task",
+        "priority": "high",
+        "allowFor": [
+            "back_end",
+            "front_end",
+            "function_test",
+            "performance_test"
+        ],
+        "createdBy": "Joo",
+        "assignee": "joo",
+        "estimate": "20/03/2020",
+        "state": "todo"
+    }
+    </pre>
+
+
+    <button type="button" id="update" > Update </button>
+
+</body>
+</html>
