@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: auto;   
+}
+.menu1{
+    background-color: #00ff22;
+    height: 75px;
+}
+.menu2{
+    background-color: #0044ff;
+    height: 75px;
+}
+.menu3{
+    background-color: red;
+    height: 75px;
+}
+.content{
+    /* display: flex;
+    flex-direction: column;*/
+    width: 65%;   
+    background-color: #c8ff00;
+    height: 600px;
+}
+.container{
+    display: flex;
+    background-color: purple;
+}
+@media screen and (max-width: 700px) and (min-width: 400px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        height: auto;
+    }
+    .menu{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .menu1{
+        background-color: #00ff22;
+        flex-basis: 25%;
+    }
+    .menu2{
+        background-color: #0044ff;
+        flex-basis: 25%;
+    }
+    .menu3{
+        background-color: red;
+        flex-basis: 25%;
+    }
+    .content{
+        width: 100%;   
+        background-color: #c8ff00;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu{
+        flex-direction: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu1{
+        background-color: #00ff22;
+        width: 100%;
+    }
+    .menu2{
+        background-color: #0044ff;
+        width: 100%;
+    }
+    .menu3{
+        background-color: red;
+        width: 100%;
+    }
+    .content{
+        width: 100%;   
+        background-color: #c8ff00;
+        height: 600px;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+.col-4{
+    height: 700px;
+}

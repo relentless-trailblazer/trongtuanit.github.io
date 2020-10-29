@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playball', cursive;
+    scroll-behavior: smooth;
+    color: #7a7171;
+}
+i{
+    color: black;
+}
+.myPage{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.hidden-btn{
+    display: none;
+}
+.myPage .bg-img{
+    background-image: url(https://www.w3schools.com/w3images/profile_girl.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+.info .bg-img1{
+    background-image: url(https://www.w3schools.com/w3images/profile_girl.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    height: 60vh;
+    margin: 5rem auto;
+    display: none;
+}
+.main{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-btn{
+    top: 0;
+    right: 0;
+    font-size: 2.2rem;
+    color: #636060;
+    padding: 0.8rem;
+    position: fixed;
+    text-align: center;
+}
+
+.menu-btn:hover{
+    background-color: silver;
+    cursor: pointer;
+}
+
+.info{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+
+}
+.info h1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 66px;
+    color: black;
+    margin-top: 22vh;
+}
+.info p {
+    text-align: center;
+    font-size: 22px;
+    margin: 16px 0;
+    color: black;
+}
+.info button{
+    margin: 10px auto 22vh auto;
+    padding: 12px 15px;
+    font-size: 20px;
+    border: none;
+    color: black;
+    width: 15rem;
+}
+.info button:hover{
+    background-color: #dfdbdb;
+    cursor: pointer;
+}
+.myPortfolio{
+    width:95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.myPortfolio h1{
+    color: #726868;
+}
+.myPortfolio hr{
+    border: 0.005px solid #f8f8f8;
+    background-color: #f8f8f8;
+    width: 95%;
+}
+.container1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+.imgs{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+.imgs img{
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    margin-top: 1rem;
+    width: 100%;
+}
+.about{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.about h1{
+    font-size: 40px;
+
+}
+.about span{
+    font-size: 20px;
+
+    text-align: justify;
+    margin: 1rem 0 1rem 0;
+}
+
+.about hr{
+    border: 0.005px solid #f8f8f8;
+    background-color: #f8f8f8;
+    width: 95%;
+    margin-top: 1rem;
+}
+.skills{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 1rem auto;
+}
+
+.skills h1{
+    margin: 2rem 0;
+}
+.skills p{
+    font-size: 20px;
+    letter-spacing: 0.3rem;
+    text-align: justify;
+}
+.skills .ptgp{
+    width: 100%;
+    height: 4vh;
+    margin: 1.5rem 0;
+    background-color: #bebdbd;
+}
+.skills .ptgp .percent{
+    color: white;
+    text-align: center;
+    line-height: 4vh;
+}
+.has-done{
+    display: flex;
+    background-color: #636363;
+    flex-direction: row;
+    color:white;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    margin: 1rem 0 2rem 0;
+}
+.has-done .div{
+    width: 20%;
+    color:white;
+}
+.has-done .div p{
+    color:white;
+    text-align: center;
+}
+.skills button{
+    padding: 12px 15px;
+    font-size: 20px;
+    border: none;
+    width: 15rem;
+    color: black;
+}
+.skills button:hover{
+    background-color: #dfdbdb;
+    cursor: pointer;
+}
+.reputation{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.reputation h1{
+    margin: 2rem 0;
+}
+.customer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 2rem 0;
+}
+.customer img{
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.customer span{
+    margin: 1rem 0 1rem 1rem;
+    font-size: 20px;
+}
+.customer span .name{
+    font-size: 28px;
+    color: black;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 1rem auto 2rem auto;
+}
+.price h1{
+    margin: 1rem 0;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.option .Quotation{
+    width: 49%;
+    box-shadow: 0px 2px 4px 0px #cfcfcf;
+}
+.option .Quotation:hover{
+    box-shadow: 0px 8px 10px 0px #a1a1a1;
+}
+.option div ul{
+    list-style-type: none;
+    width: 100%;
+}
+.option .title {
+    color: white;
+    padding: 1.9rem 0;
+    font-size: 28px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.tt-pro{
+    background-color: black;
+}
+.tt-basic{
+    background-color: #727070;
+}
+.option li{
+    text-align: center;
+    font-size: 20px;
+    padding: 1rem 0;
+    border: 0.5px solid rgba(129, 129, 129, 0.2);
+    border-top: none;
+}
+.option .sign-up {
+    background-color: #e2e2e2;
+    padding: 1.4rem 0;
+}
+.option .sign-up button{
+    padding: 0.5rem 1.7rem;
+    font-size: 22px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+.option .sign-up button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: rgb(219, 0, 0);
+}
+.money{
+    color: #ffd712;
+}
+.option .Quotation ul li p{
+    font-size: 8px;
+}
+.contact{
+    width: 95%;
+    margin: 2rem auto 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact h1{
+    word-spacing: 0.7rem;
+}
+.contact hr{
+    border: 0.005px solid #f8f8f8;
+    background-color: #f8f8f8;
+    width: 95%;
+}
+.contact i {
+    color: #7a7171;
+    margin-right: 1rem;
+    font-size: 28px;
+}
+.contact li {
+    font-size: 20px;
+    margin-bottom: 1.2rem;
+}
+.contact img {
+    width: 100%;
+    background-position: center;
+    filter: grayscale(60%);
+    margin: 1rem 0;
+}
+.contact form{
+    width: 100%;
+}   
+.contact input{
+    width: 95%;
+    padding: 1rem 1rem;
+    border: 0.5px solid #b9b9b9;
+    margin-bottom: 1rem;
+    font-size: 18px;
+}   
+.contact form button{
+    color: black;
+    background-color: #e6e6e6;
+    border: none;
+    padding: 13px 20px;
+    font-size: 18px;
+    word-spacing: 0.4rem;
+} 
+.contact form button:hover{
+    background-color: #9b9b9b;
+    cursor: pointer;
+} 
+.contact form i{
+    color: black;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+} 
+.footer{
+    background-color: #fcfcfc;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+.footer i{
+    font-size: 28px;
+    margin: 8vh 0.3rem 0 0.3rem;
+    color: #615d5d;
+}
+.footer i:hover{
+    color: red;
+}
+.footer p{
+    margin-bottom: 8vh;
+    padding: 0;
+    font-size: 36px;
+}
+.footer p i{
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+}
+.footer p .fa-coffee:hover{
+    color: yellow;
+}
+
+
+@media screen and (max-width:1023px) {
+    .myPage{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .info button{
+        margin-bottom: 5rem;
+    }
+    .info h1{
+        margin-top: 4vh;
+    }
+    .myPage .bg-img{
+        display: none;
+    }
+    .info .display-btn1{
+        display: none;
+    }
+    .info .hidden-btn{
+        display: block;
+    }
+    .info .bg-img1{
+        display: flex;
+        margin: 0 auto;
+    }
+    .main{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact input{
+        width: 95.5%;
+        padding: 1rem 1rem;
+        border: 0.5px solid #b9b9b9;
+        margin-bottom: 1rem;
+        font-size: 18px;
+    }
+
+
+    @media screen and (max-width:850px){
+        .info .bg-img1{
+            display: flex;
+            margin: 0 auto;
+            width: 85%;
+        }
+        .container1{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 4rem;
+        }
+        .imgs{
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            margin: 0 auto;
+        }
+        .has-done{
+            display: flex;
+            background-color: #636363;
+            flex-direction: column;
+            color:white;
+            padding: 0 2rem;
+        }
+        .has-done .div{
+            width: 100%;
+            color:white;
+            margin-top: 3rem;
+        }
+        .has-done .div p{
+            color:white;
+            text-align: center;
+        }
+        .has-done .the-last{
+            color:white;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .price .option{
+            flex-direction: column;
+        }
+        .option .Quotation{
+            width: 95%;
+            box-shadow: 0px 2px 4px 0px #cfcfcf;
+            margin: 3rem auto 0 auto;
+        }
+    }
+
+}
