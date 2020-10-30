@@ -15,6 +15,7 @@ i{
     flex-direction: row;
     width: 100%;
     flex-wrap: nowrap;
+
 }
 .hidden-btn{
     display: none;
