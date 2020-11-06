@@ -41,7 +41,8 @@ ul{
 }
 .header .btn a {
     padding: 1rem 1.7rem;
-    color: #82f7ff;
+    color: #82b8ff;
+    text-decoration: none;
 }
 .header .btn button {
     padding: 1rem 1.6rem;
