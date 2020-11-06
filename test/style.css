@@ -1,0 +1,218 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+}
+.intro, .header, .container3 ,.container5{
+    width: 75%;
+    margin: 0 auto;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+.header ul {
+    margin-left: 7%;
+}
+.header{
+    height: 15vh;
+    width: 75%;
+    margin: 4vh auto 0 auto;
+    display: flex;
+    position: relative;
+}
+.menu1{
+    display: flex;
+}
+.menu1 li{
+    padding: 1rem 1.7rem;
+    font-weight: 700;
+    
+}
+.header img{
+    width: 50px;
+    height: 50px;
+}
+.header .btn {
+    position: absolute;
+    right: 8%;
+}
+.header .btn a {
+    padding: 1rem 1.7rem;
+    color: #82f7ff;
+}
+.header .btn button {
+    padding: 1rem 1.6rem;
+    border: 0.5px solid #fa5656;
+    color: #fa5656;
+    background-color: white;
+    border-radius: 10px;
+}
+.header .btn button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #fa5656;
+    transition: 0.3s;
+}
+.intro{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+}
+.intro-left{
+    width: 46%;
+}
+.intro-left h1{
+    font-size: 46px;
+    margin-bottom: 2vh;
+}
+.intro-left ul{
+    margin-top: 1vh;
+}
+.intro-left li{
+    padding: 1vh 0;
+}
+.intro-left .btn{
+    display: flex;
+    justify-content: space-between;
+}
+.intro-left button{
+    padding: 1.3rem 0;
+    width: 48%;
+    background-color: #f83636;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+}
+.intro-right{
+    width: 46%;
+    background-image: url("./assets/img/two-male.png");
+    height: 65vh;
+    background-position: center;
+    background-size: cover;
+}
+.container3{
+    display: flex;
+    flex-direction: column;
+    margin: 6vh auto 18vh auto;
+}
+.container3 h1{
+    margin: 0 auto;
+}
+.container3 p{
+    width: 35%;
+    margin: 2vh auto 0 auto;
+    color: #858383;
+    text-align: center;
+}
+.container3 ul{
+    width: 35%;
+    margin: 2vh auto 0 auto;
+    color: #858383;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container3 li{
+    padding: 0.5rem 1.2rem;
+    border: 0.5px solid #858383;
+    border-radius: 10px;
+    margin: 0.25rem;
+}
+.container3 li:hover{
+    background-color: #dddbdb;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.container4{
+    width: 100%;
+    background-color: #fff4e7;
+}
+.pink-div{
+    width: 75%;
+    margin: 0 auto;;
+    padding: 15vh 0;
+    display: flex;
+}
+.container4-left {
+    width: 46%;
+}
+.container4-left h2{
+    color: #858383;
+    margin: 2vh 0;  
+}
+.container4-left h1{
+    width: 60%;
+    font-size: 42px;
+}
+.container4-left p{
+    margin: 2.5vh 0 3vh 0;
+}
+.container4-left .btn button{
+    padding: 2.6vh 0;
+    width: 48%;
+    color: white;
+    background-color: #ee3e3ee7;
+    font-size: 18px;
+    border-radius: 15px;
+    border: 0.5px solid white;
+    cursor: pointer;
+}
+.container4-right{
+    width: 50%;
+    background-image: url("./assets/img/7.png");
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+.container5{
+    width:45%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20vh auto;
+    text-align: center;
+}
+.container5 h3{
+    margin: 0 auto 0 auto;
+    border-bottom: 0.5px solid silver;
+    padding-bottom: 2vh;
+}
+.container5 p{
+    margin: 2vh auto;
+}
+.container5 h2{
+    margin: 2vh auto;
+}
+.container5 img{
+    margin: 2vh auto;
+}
+.container5 .container5-ele{
+    padding: 2.2vh;
+    width: 30%;
+    border: 0.5px solid silver;
+    border-radius: 20px;
+}
+.container5 .container5-ele img{
+    height: 20px;
+
+}
+.footer{
+    color: white;
+    width: 100%;
+    display: flex;
+    background-color: #27273b;
+}
+.contrai-footer{
+    width: 60%;
+    margin: 8vh auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.logo img{
+    margin: 0 2vh 0 0;
+}
