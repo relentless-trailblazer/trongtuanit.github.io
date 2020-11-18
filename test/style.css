@@ -13,9 +13,9 @@ ul{
     list-style-type: none;
 
 }
-.header ul {
-    margin-left: 7%;
-}
+/* .header ul {
+    
+} */
 .header{
     height: 15vh;
     width: 75%;
