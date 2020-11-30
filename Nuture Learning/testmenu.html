@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="testmenu.css">
+
+</head>
+<body>
+
+  <!-- <div class="topnav" id="myTopnav">
+    <a href="#home" class="active left-side">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#home" class="active right-side">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div> -->
+
+  <div class="div" style="height: 800px; width: 100%; background-color: aliceblue"></div>
+
+
+
+
+
+
+
+
+
+    <div class="menu" id="myTopnav">
+      <li href="HomePage.html">Nuture<span style="color: #00aa5b;">.</span> </li>
+      <div class="sub-menu">
+        <ul class="sub-menu">
+            <li>Home</li>
+            <li class="breakpoint">Dropdown <i class="fa fa-angle-down"></i>
+                <ul class="sub-menu2">
+                    <li>Element 1</li>
+                    <li>Element 2</li>
+                    <li>Element 3</li>
+                </ul>
+            </li>
+            <li>Our Staff</li>
+            <li>News</li>
+            <li>Gallery</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"> </i>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="div" style="height: 800px; width: 100%; background-color: azure;"></div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu";
+  }
+}
+</script>
+
+</body>
+</html>
