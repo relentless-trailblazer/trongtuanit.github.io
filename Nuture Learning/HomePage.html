@@ -15,28 +15,38 @@
 </head>
 
 <body >
-    <!-- <div class="menu">
-        <a href="HomePage.html">Nuture<span style="color: #00aa5b;">.</span> </a>
-        <div class="sub-menu">
-            <ul class="sub-menu">
-                <li>Home</li>
-                <li class="breakpoint">Dropdown <i class="fa fa-angle-down"></i>
-                    <ul class="sub-menu2">
-                        <li>Element 1</li>
-                        <li>Element 2</li>
-                        <li>Element 3</li>
-                    </ul>
-                </li>
-                <li>Our Staff</li>
-                <li>News</li>
-                <li>Gallery</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <div class="enroll">ENROLL NOW</div>
-    </div> -->
 
+
+    <header class="Homepage">
+        <div class="logo"><a href="">Nurture</a></div>
+        <nav class="active">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li class="break-point"> <a href=""> Dropdown <i class="fa fa-angle-down"></i></a>
+              <ul class="sub-menu">
+                <li><a href="#">Element 1</a></li>
+                <li><a href="#">Element 2</a></li>
+                <li><a href="#">Element 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Our Staff</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="enroll">ENROLL NOW</div>
+        <div class="menu-toggle"><i class="fa fa-bars"></i></div>
+      </header>
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('.menu-toggle').click(function() {
+            $('nav').toggleClass('active');
+          })
+        })
+      </script>
     <div class="container1">
         <div class="cross-bar">
             <div class="left-side">
@@ -389,7 +399,7 @@
 
     </div>
 
-    <p style="text-align: center;color: white; background-color: #0fb78d;padding: 5vh 0;">Copyright ©2020 All rights reserved | This template is made with  by my team</p>
+    <p style="text-align: center;color: white; background-color: #0fb78d;padding: 5vh 0; margin: 0;">Copyright ©2020 All rights reserved | This template is made with  by my team</p>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
