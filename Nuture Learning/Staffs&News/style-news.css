@@ -364,11 +364,13 @@ header nav ul li a:hover {
 .container6 {
     background-color: rgb(247, 247, 247);
     width: 100%;
+
 }
 
 .container6-content {
     width: 65%;
     margin: 4vh auto;
+    padding: 0 40px;
 }
 
 .container6 .hr {
@@ -518,7 +520,6 @@ li {
 }
 
 .container9 {
-    margin-top: 150px;
     width: 100%;
     background-color: #0fb78d;
     color: white;
