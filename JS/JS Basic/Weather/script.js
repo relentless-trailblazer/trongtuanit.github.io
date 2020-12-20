@@ -39,7 +39,7 @@ async function fetchDataForecast(forecast) {
     main.innerHTML = str.join('');
   } catch (error) {
     console.log(err.message);
-    alert("Invalid city name!");
+
   }
 }
 
@@ -72,7 +72,6 @@ async function fetchDataCurrent(current) {
 
   } catch (error) {
     console.log(err.message);
-    alert("Invalid city name!");
   }
 }
 

@@ -12,6 +12,7 @@
     *{
       font-family: 'Alegreya', serif;
       margin: 0;
+      color: #410941;
     }
 
     .container{
@@ -21,10 +22,11 @@
       justify-content: center;
       align-items: center;
       margin: 3vh auto 0 auto;
-      border: 2px solid #99273a;
+      border: 2px solid #444710;
       padding: 20px;
       border-radius: 30px;
-      background: #5fac33cc;
+      background: #dbdbdbcc;
+      box-shadow: 5px 5px 8px 5px #888888;
     }
     h1{
       margin: 0vh 0 1vh 0;
@@ -93,6 +95,11 @@
         }
       }
     }
+
+    input:hover{
+      box-shadow: 3px 1px 3px 1px #888888;
+      transition: 0.3s;
+    }
   </style>
 <body>
   <div class="container">
@@ -112,14 +119,6 @@
     <div id="humidity"> </div>
     <p style="font-weight: 600;">Temperature By Hours</p>
     <div class="main" id="main">
-
-      <!-- <div class="ele">
-        <div id="hour"></div>
-        <img src="" alt="" id="description">
-        <div class="tempByHour"></div>
-      </div> -->
-
-
     </div>
   </div>
 
