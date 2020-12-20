@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 350px">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body html {
+        margin: 0;
+        padding: 0;
+        width: 350px !important;
+        min-height: 200px !important;
+    }
+    #map{
+      width: 300px;
+      min-height: 200px
+    }
+  </style>
+</head>
+<body style="width: 300px; margin: 0; min-height: 200px;">
+  <div id="map">
+  </div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP0ILESdyPfXXTJuG65ZWZQYeVarEk_1w&callback=initMap"
+  type="text/javascript"></script>
+  <script>
+    function initMap() {
+      var location = {lat: 21.054415, lng: 105.735398};
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        canter : location
+      });
+    //   var marker = new google.maps.Marker({
+    //     position: location,
+    //     msp: map
+    //   })
+    }
+  </script>
+</body>
+</html>

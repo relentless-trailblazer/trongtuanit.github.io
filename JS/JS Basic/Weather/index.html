@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ForeCast by TuanVu</title>
+  <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+  <style>
+    *{
+      font-family: 'Alegreya', serif;
+      margin: 0;
+    }
+
+    .container{
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 3vh auto 0 auto;
+      border: 2px solid #279927;
+      padding: 20px;
+      border-radius: 30px;
+      background: rgba(212, 116, 92, 0.8);
+    }
+    h1{
+      margin: 0vh 0 1vh 0;
+      font-size: 4em;
+    }
+    sup span{
+      font-size: 22px;
+    }
+    sup{
+      font-size: 0.4em;
+    }
+    .searchBar{
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    #typeCityName{
+      width: 67%;
+    }
+    #submit {
+      width: 28%;
+    }
+    input{
+      padding: 6px 0;
+    }
+    #cityName{
+      text-align: center;
+    }
+    .datendescription{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    #humidity{
+      margin: 1vh auto;
+    }
+    #currentIco{
+      width: 75px;
+      height: 75px;
+    }
+    .main{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      align-content: center;
+    }
+    .ele{
+      text-align: center;
+      margin: 1vh 0 0 0;
+    }
+    @media only screen and (max-width: 900px) {
+      .container{
+        width: 45%;
+      }
+      @media only screen and (max-width: 600px) {
+        .container{
+          width: 55%;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .container{
+          width: 85%;
+        }
+      }
+    }
+  </style>
+<body>
+  <div class="container">
+    <div class="searchBar">
+      <input type="text" id="typeCityName" placeholder="City name. Example: Hà Nội">
+      <input id="submit" type="button" value="Search" onclick="searchForecast()">
+    </div>
+    <h2 style="margin: 1vh 0 0 0;" id="cityName">
+    </h2>
+    <h2 style="margin: 1.5vh 0 0 0;">Temperature</h2>
+    <h1 id="temperature"></h1>
+    <img src="" alt="" id="currentIco">
+    <div class="datendescription">
+      <span id="date"></span>
+      <span id="description"></span>
+    </div>
+    <div id="humidity"> </div>
+    <p style="font-weight: 600;">Temperature By Hours</p>
+    <div class="main" id="main">
+
+      <!-- <div class="ele">
+        <div id="hour"></div>
+        <img src="" alt="" id="description">
+        <div class="tempByHour"></div>
+      </div> -->
+
+
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
