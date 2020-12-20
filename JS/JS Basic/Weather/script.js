@@ -83,6 +83,10 @@ fetchDataCurrent(current);
 
 function searchForecast() {
   cityName = document.getElementById("typeCityName").value.toLowerCase();
+  if(cityName==='') {
+    alert("Invalid city name!");
+    return;
+  }
   var forecast = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=${_API_KEY_}&lang=vi`;
   var current = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${_API_KEY_}&lang=vi`;
   fetchDataForecast(forecast);
