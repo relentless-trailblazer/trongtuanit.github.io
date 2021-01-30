@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+  }
+  .container{
+    width: 55%;
+    margin: 3vh auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background: rgba(228, 219, 219, 0.521);
+  }
+  @media only screen and (max-width: 1300px) {
+      .container{
+        width: 70%;
+      }
+      @media only screen and (max-width: 900px) {
+        .container{
+          width: 75%;
+        }
+        @media only screen and (max-width: 700px) {
+          .container{
+            width: 85%;
+          }
+        }
+      }   
+  }
+  .form{
+    width: 100%;
+  }
+  .title{
+    margin: 2vh 0;
+    text-align: center;
+    color: #660bbb;
+  }
+  /* form{
+    display: flex;
+    justify-content: space-between;
+  } */
+  input{
+    outline: none;
+    width: 100%;
+    padding: 4px;
+  }
+  #duty,#btn{
+    padding: 6.5px;
+  }
+  /* #from, #to{
+    width: 15%;
+    padding: 4px;
+  }
+  #btn{
+
+  } */
+
+  .forms{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .form1 ,.duty{
+    width: 50%;
+    display: block;
+  }
+  .form2,.form3 , .from,.to{
+    width: 16%;
+    display: block;
+  }
+  .form4 ,.delete{
+    width: 12%;
+    display: block;
+  }
+  label{
+    width: 100% !important;
+  }
+  .todoList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .todo{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    border-radius: 10px;
+  }
+  .delete{
+    border: 0.5px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: 10%;
+    background: white;
+    cursor: pointer;
+  }
+  .delete:hover{
+    background: #fff0ae;
+  }
+  .delete ,.from ,.to,.duty{
+    padding: 4px;
+  }
+</style>
+<body>
+  <div class="container">
+    <h1 class="title">Todo List Management</h1>
+
+    <div class="forms">
+      <form class="form1">
+        <label for="duty">Duty </label> <br>
+        <input id="duty" name="duty" type="text" placeholder="things todo">
+      </form>
+      <form class="form2">
+        <label for="from">From </label> <br>
+        <input id="from" name="time" type="datetime-local" placeholder="time">
+      </form>
+      <form class="form3">
+        <label for="to">To </label> <br>
+        <input id="to" name="time" type="datetime-local" placeholder="time">
+      </form>
+      <form class="form4">
+        <br> 
+        <input id="btn" type="button" value="Add">
+      </form>
+    </div>
+    <h1 class="title">Todo List</h1>
+    <div class="todoList" id="todoList">
+      <div class="todo">
+        <div class="duty">1</div>
+        <div class="from">2</div>
+        <div class="to">3</div>
+        <div class="delete" id="delete">4</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", ()=>{
+      const duty = document.getElementById("duty").value;
+      const datetimeStart = document.getElementById("from").value;
+      const datetimeEnd = document.getElementById("to").value;
+      const todoList = document.getElementById("todoList");
+
+      const dateStart = datetimeStart.substr(0,10);
+      const timeStart = datetimeStart.substr(11);
+      const dateEnd = datetimeEnd.substr(0,10);
+      const timeEnd = datetimeEnd.substr(11);
+
+      if(duty === '') {
+        alert("Duty can't be empty!");
+        return;
+      }
+      if(datetimeStart === '') {
+        alert("Time start can't be empty!");
+        return;
+      }
+      if(datetimeEnd === '') {
+        alert("Time end can't be empty!");
+        return;
+      }
+
+
+      const strDuty = `<div class="duty">${duty}</div>`;
+      const strDateStart = `<div class="from">${dateStart}${timeStart}</div>`;
+      const strDateEnd = `<div class="to">${dateStart}${timeStart}</div>`;
+      const deleteBtn = `<div class="delete" id="delete">Delete</div>`;
+
+      const todo = `<div class="todo">${strDuty}${strDateStart}${strDateEnd}${deleteBtn}</div>`;
+      todoList.innerHTML+=todo;
+
+    })
+  </script>
+</body>
+</html>

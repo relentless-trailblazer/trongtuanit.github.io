@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table>
+    <form action=""  >
+      <tr>
+        <td><label for="title">Tiêu đề: </label></td>
+        <td><input name="title" type="text"></td>
+      </tr>
+      <tr>
+        <td><label for="receive">Người nhận: </label></td>
+        <td><input name="title" type="text"></td>
+      </tr>
+      <tr>
+        <td><label for="file">File đính kèm: </label></td>
+        <td><input name="title" type="text" id="file"></td>
+      </tr>
+      <tr>
+        <td><label for="content">Nội dung </label></td>
+        <td><textarea rows="" cols=""></textarea></td>
+      </tr>
+      <tr>
+        <td><button onclick="validate()">submit</button></td>
+      </tr>
+    </form>
+  </table>
+  <script>
+    function validate() {
+      const regexFilename = /\S+@\S+\.\S+/;
+      const Filename = document.getElementById("file").value;
+
+      if(!regexFilename.test(Filename)) {
+        alert("false")
+      } else {
+        alert("true")
+      }
+    }
+
+  </script>
+</body>
+</html>

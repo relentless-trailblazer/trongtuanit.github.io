@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card{
+  height: 20vh;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  margin: 50px auto;
+  box-shadow: 3px 3px 10px 1px black;
+}
+.image{
+  height: 20vh;
+  width: 80%;
+  background-position: center;
+  background-size: cover;
+}
+.content{
+  padding: 20px;
+}
+
+.showBtn{
+  cursor: pointer;
+}
+.showBtn-clicked{
+  cursor: pointer;
+  transform: rotateZ(90);
+}
+.desc{
+  /* display: none; */
+}
+@media screen and (max-width: 1200px) {
+  .card{
+    width: 60%;
+  }
+}

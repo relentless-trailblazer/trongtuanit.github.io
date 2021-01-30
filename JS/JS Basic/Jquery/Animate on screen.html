@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+    #block{
+      width: 200px;
+      height: 800px;
+      background: red;
+      padding: 10%;
+      margin: 5%;
+    }
+  </style>
+</head>
+
+<body>
+  <div data-aos="fade-up" id="block"></div>
+  <div data-aos="flip-left" id="block"></div>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

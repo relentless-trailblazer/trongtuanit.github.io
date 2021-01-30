@@ -91,8 +91,9 @@ function searchForecast() {
   var current = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${_API_KEY_}&lang=vi`;
   fetchDataForecast(forecast);
   fetchDataCurrent(current);
-
 }
+
+
 
 
 
