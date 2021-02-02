@@ -42,7 +42,6 @@ export default class Content extends React.Component {
   renderModal = () => {
     if(this.state.modalVisible)
       return (
-        <div onClick={this.handleClickCounter}> 
           <Modal
             closable
             title="Hello"
@@ -54,7 +53,6 @@ export default class Content extends React.Component {
             {this.renderCounter()}
             <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, debitis! </p>
           </Modal>
-        </div>
       );
     return null;
   }

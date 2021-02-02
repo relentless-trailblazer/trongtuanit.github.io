@@ -1,14 +1,14 @@
 
 import './App.css';
-import Content from "./components/Content"
+import Container from "./components/Container"
 import React from "react";
 
 function App() {
   return (
     <React.Fragment>
       <div className="app">
-        <Content> 
-        </Content>
+        <Container> 
+        </Container>
       </div>
     </React.Fragment>
   ); 
