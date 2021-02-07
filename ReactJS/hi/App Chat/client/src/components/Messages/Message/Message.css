@@ -1,10 +1,11 @@
 .messageBox {
   background: #F3F3F3;
-  border-radius: 20px;
-  padding: 5px 20px;
+  border-radius: 17px;
+  padding: 0.75em 15px;
   color: white;
   display: inline-block;
   max-width: 80%;
+  margin-top: 7px;
 }
 
 .messageText {
@@ -22,7 +23,7 @@
 .messageContainer {
   display: flex;
   justify-content: flex-end;
-  padding: 0 5%;
+  padding: 0 4%;
   margin-top: 3px;
 }
 
@@ -59,7 +60,7 @@
 }
 
 .backgroundBlue {
-  background: #2979FF;
+  background: #ff6721;
 }
 
 .backgroundLight {

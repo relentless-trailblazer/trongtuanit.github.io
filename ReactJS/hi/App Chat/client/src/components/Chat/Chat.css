@@ -1,9 +1,22 @@
+/* 
+.biggestContainer{
+
+}
+.biggestContainer::before{
+  content: "";
+  background-image:  url("../../assests/background3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+} */
+
 .outerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #1A1A1D;
+
 }
 
 .container {
@@ -12,9 +25,18 @@
   justify-content: space-between;
   background: #FFFFFF;
   border-radius: 8px;
-  height: 60%;
-  width: 35%;
+  height: 80%;
+  width: 75%;
+  box-shadow: 0px 0px 2px 2px #535353;
+  transition: 0.25s;
 }
+
+.container:hover{
+  box-shadow: 0px 0px 3px 3px #720202;
+}
+
+
+
 
 @media (min-width: 320px) and (max-width: 480px) {
   .outerContainer {
@@ -22,12 +44,12 @@
   }
 
   .container {
-    width: 100%;
+    width: 90%;
   }
 }
 
-@media (min-width: 480px) and (max-width: 1200px) {
+/* @media (min-width: 480px) and (max-width: 1200px) {
   .container {
     width: 60%;
   }
-}
+} */
