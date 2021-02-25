@@ -11,7 +11,7 @@ const Join =() => {
     
       <div className="joinOuterContainer center">
         <div className="blurBox">
-          <h1 className="title">Team 8 KTPM1 - Thực tập cơ sở ngành </h1>
+          <h1 className="title">Team 8 KTPM1 - Thực tập cơ sở ngành IT6040.1</h1>
           <div className="joinInnerContainer">
             <h2 className="heading">Join</h2> 
             <div><input onChange={(event) => setName(event.target.value)} type="text" className="joinInput" placeholder="Name" /></div>
