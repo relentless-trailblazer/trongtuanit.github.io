@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        transition: 0.35s;
+        scroll-behavior: smooth;
+      }
+      .container div {
+        height: 300px;
+        width: 30%;
+        background-color: blue;
+        margin: 10px;
+        align-items: center;
+        align-content: center;
+        display: flex;
+      }
+      h2 {
+        text-align: center;
+        margin: 0 auto;
+        color: white;
+      }
+      #element {
+        background-color: #c34b47;
+      }
+    </style>
+
+    <nav class="container">
+      <button id="btn">Scroll to element</button>
+      <button id="start">Start animation</button>
+      <div></div>
+      <div></div>
+      <div id="element">
+        <h2>Element</h2>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <button id="stop">Stop animation</button>
+      <div></div>
+    </nav>
+
+    <script>
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", () => {
+        const el = document.getElementById("element");
+        el.scrollIntoView();
+        el.addEventListener("click", () => {
+          window.scrollTo(0, 0);
+        });
+      });
+
+      const start = document.getElementById("start");
+      start.addEventListener("click", () => {
+        const elements = document.getElementsByTagName("div");
+        let i = 0;
+        var myInterval = setInterval(() => {
+          elements[i].scrollIntoView();
+          if (i == elements.length - 1) {
+            i = 0;
+          } else {
+            i++;
+          }
+        }, 800);
+        const stop = document.getElementById("stop");
+        stop.addEventListener("click", () => {
+          clearInterval(myInterval);
+        });
+      });
+    </script>
+  </body>
+</html>
