@@ -1,5 +1,7 @@
 const API_URL = "https://computer-shop-hit.herokuapp.com/api/categories";
 
+// retard
+
 const renderData = (datas) => {
   const view = document.getElementById("view");
   datas.forEach((data) => {
@@ -19,7 +21,6 @@ function getJSON() {
   var promise = fetch(API_URL);
   promise
     .then((res) => {
-      console.log("fecth ok!");
       return res.json();
     })
     .then((JSON) => {
