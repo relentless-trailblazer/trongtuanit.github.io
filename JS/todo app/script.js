@@ -96,6 +96,8 @@ const renderListTodos = (
     p.addEventListener("dblclick", (e) => {
       if (isCompleted) return;
       p.setAttribute("contenteditable", "true");
+      completeBtn.setAttribute("disabled", "");
+      deleteBtn.setAttribute("disabled", "");
     });
 
     p.addEventListener("focusout", (e) => {
@@ -109,6 +111,8 @@ const renderListTodos = (
       });
       setData(newData);
       p.removeAttribute("contenteditable");
+      completeBtn.removeAttribute("disabled");
+      deleteBtn.removeAttribute("disabled");
       location.reload();
     });
 
