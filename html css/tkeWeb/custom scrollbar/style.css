@@ -1,0 +1,43 @@
+.custom-scrollbar {
+  height: 2400px;
+  /* overflow-y: scroll; */
+}
+
+/* To style the document scrollbar, remove `.custom-scrollbar` */
+
+/* .custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px rgb(250, 0, 0);
+  border-radius: 7px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(12, 65, 223, 0.714);
+}  */
+
+*::-webkit-scrollbar {
+  width: 15px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  padding-top: 5px;
+  box-shadow: inset 0 0 8px rgb(2, 1, 1);
+  border-radius: 17px;
+  width: 5px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  padding-top: 5px;
+  box-shadow: inset 0 0 10px rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.592);
+  border-radius: 17px;
+  width: 5px;
+  height: 8px;
+}
