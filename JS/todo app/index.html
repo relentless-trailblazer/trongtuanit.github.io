@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="app">
+    <div class="app" id="app">
+      <button class="btn" id="toggleBtn">toggle dark mode</button>
       <h1 class="header">Hello World</h1>
-
       <div id="content">
         <input type="text" id="input" placeholder="What needs to be done?" />
         <div id="todo-list">
@@ -22,5 +22,29 @@
     </div>
 
     <script type="module" src="./script.js"></script>
+    <script>
+      const app = document.getElementById('app');
+      const toggleBtn = document.getElementById('toggleBtn')
+
+      const isDark = localStorage.getItem("dark-mode");
+      if(isDark === null) {
+        localStorage.setItem("dark-mode", false);
+      }
+
+      if(isDark === true) {
+        if(app.classList.contains('dark-mode') === false) {
+          app.classList.add('dark-mode');
+        }
+      }
+
+      toggleBtn.addEventListener('click', (e) => {
+        app.classList.toggle("dark-mode");
+        if(isDark === true) {
+          localStorage.setItem("dark-mode", false);
+        } else {
+          localStorage.setItem("dark-mode", true);
+        }
+      })
+    </script>
   </body>
 </html>
