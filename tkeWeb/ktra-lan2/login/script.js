@@ -31,7 +31,7 @@ function login(e) {
     alert("Không được để trống trường username hoặc password");
   } else if (username.value === `"admin"_` && password.value === "123456a@") {
     alert(
-      "Yêu cầu password không có kí tự hoa, bắt đầu bằng số mà bạn vẫn đoán được, giỏi quá! Bạn là nhất!"
+      "Yêu cầu password có kí tự hoa, không bắt đầu bằng số mà bạn vẫn đoán được, giỏi quá! Bạn là nhất!"
     );
     alert("Đăng nhập thành công!");
   } else {
