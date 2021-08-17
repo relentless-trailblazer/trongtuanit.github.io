@@ -79,7 +79,7 @@ const deleteUser = async (userId) => {
 };
 
 // postUser({
-//   fullName: "test api",
+//   fullName: "test api by local",
 //   birthday: 2001,
 //   gender: "nam",
 // }).then(res => console.log(res));
@@ -89,6 +89,6 @@ const deleteUser = async (userId) => {
 //    gender: "nam",
 //  })
 // deleteUser(7).then(res => console.log(res))
-// getListUsers().then(res => console.log(res));
+getListUsers().then(res => console.log(res));
 
 

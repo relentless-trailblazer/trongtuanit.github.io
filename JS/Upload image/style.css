@@ -1,0 +1,104 @@
+* {
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+header {
+  display: flex;
+  padding: 12px 40px;
+  background-color: #28a79c;
+  color: white;
+  margin-bottom: 20px;
+}
+header h4 {
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.files input {
+  outline: none;
+  padding: 70px;
+  text-align: center !important;
+  margin: 0;
+  width: 100% !important;
+  cursor: pointer;
+}
+
+.files{ 
+  position:relative;
+  background-color: #28a745;
+  border-radius: 8px;
+  margin: 0 0 20px 0;
+  box-sizing: border-box !important;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  
+}
+.files:after {  pointer-events: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 50px;
+  right: 0;
+  height: 56px;
+  content: "";
+  background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
+  display: inline-block;
+  margin: 0 auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.files:hover { 
+  background-color: #24ce4b;
+}
+.color input{ 
+  background-color:#f1f1f1;
+}
+input[type='file'] {
+  opacity:0;
+}
+.alert {
+  margin-top: 20px;
+}
+.links {
+  margin-top: 40px;
+  overflow-x: scroll;
+}
+.images {
+  width: 100%;
+  padding: 25px;
+}
+.images a{
+  display: inline;
+  margin-right: 15px;
+  line-height: 28px;
+}
+
+.images .row {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background-color: #e4e4e4;
+}
+
+.images .copy-btn {
+  padding: 6px 18px;
+  background-color: #dc3545;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: .25rem;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+.btn {
+  white-space: unset;
+}
