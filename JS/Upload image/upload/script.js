@@ -4,7 +4,7 @@ const input = document.querySelector("#files");
 const upload = document.getElementById("upload");
 const notice = document.querySelector("#form-notice");
 let files = [];
-
+const validImageTypes = ["image/gif", "image/jpeg", "image/png"];
 
 const renderLinksAfterUpload = (imagesUploaded) => {
   let links = [];
@@ -24,7 +24,7 @@ const renderLinksAfterUpload = (imagesUploaded) => {
   } else {
     imgStorage = JSON.parse(localStorage.getItem("imgStorage"));
   }
-  
+
   for (const obj of links) {
     imgStorage.push(obj);
     let a = document.createElement("a");
@@ -51,9 +51,18 @@ upload.addEventListener("click", (event) => {
   if (!files || files.length === 0) {
     return;
   }
-  // append img to form data 
+  // append img to form data
   let formData = new FormData();
   for (const file of files) {
+    if (!validImageTypes.includes(file["type"])) {
+      alert("Hiện mình chỉ hỗ trợ upload ảnh thôi nha 😖");
+      input.value = "";
+      files = [];
+      notice.textContent = `${files.length} ${
+        files.length > 1 ? "files" : "file"
+      } selected`;
+      return;
+    }
     formData.append("files", file, file.name);
     // console.log(file);
   }
