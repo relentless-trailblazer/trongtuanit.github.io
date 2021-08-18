@@ -15,16 +15,28 @@
       let copyBtn = document.createElement("button");
 
       div.setAttribute("class", "row");
+
+      copyBtn.setAttribute("type", "button");
       copyBtn.setAttribute("class", "copy-btn");
+      copyBtn.setAttribute("data-toggle", "tooltip");
+      copyBtn.setAttribute("data-placement", "right");
+      copyBtn.setAttribute("title", "Copy to clipboard");
+
       copyBtn.textContent = "Copy";
       copyBtn.addEventListener("click", () => {
         navigator.clipboard.writeText(ele);
       });
-      a.textContent = ele;
 
+      a.textContent = ele;
+      a.setAttribute("href", `${ele}`);
+      a.setAttribute("target", "_blank");
       div.append(a);
       div.append(copyBtn);
       images.append(div);
     }
   }
 })();
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
