@@ -15,18 +15,18 @@ public abstract class Hocvien {
 			diaChi = sc.nextLine();
 			
 			do {
-				System.out.println("Nhap vao loai uu tien(1|2): ");
+				System.out.print("Nhap vao loai uu tien(1|2): ");
 				loaiUuTien = sc.nextInt();
 				sc.nextLine();
 				
 				while (loaiUuTien!= 1 && loaiUuTien!=2) {
-					System.out.println("Nhap lai loai uu tien(1|2): ");
+					System.out.print("Nhap lai loai uu tien(1|2): ");
 					loaiUuTien = sc.nextInt();
 					sc.nextLine();
 				}
 			} while (loaiUuTien!= 1 && loaiUuTien!=2);
 		} catch (Exception e) {
-			System.out.println("Message line 29 in class Hocvien: Loi khi nhap du lieu. Error: " + e.getStackTrace());
+			System.out.println("Message in class Hocvien: Loi khi nhap du lieu. Error: " + e.getStackTrace());
 		}
 	};
 	
@@ -35,10 +35,15 @@ public abstract class Hocvien {
 			System.out.println("Ho ten: " + hoTen);
 			System.out.println("Dia chi: " + diaChi);
 			System.out.println("Loai uu tien: " + loaiUuTien);
-			System.out.println("Hoc phi: " + hocPhi());
+			
+			if(hocPhi() < 0) 
+				System.out.println("Tai tro hoc vien uu tien: " + (hocPhi()*-1));
+			else 
+				System.out.println("Hoc phi: " + hocPhi());
+			
 			
 		} catch (Exception e) {
-			System.out.println("Message line 41 in class Hocvien: Loi khi xuat du lieu. Error: " + e.getStackTrace());
+			System.out.println("Message in class Hocvien: Loi khi xuat du lieu. Error: " + e.getStackTrace());
 		}
 	}
 
