@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: #336699;
+  color: white;
+}
+
+.logo-header img {
+  height: 60px;
+  width: auto;
+}
+
+.logo-header {
+  flex-basis: 20%;
+  margin-left: 25px;
+}
+
+.cart-header {
+  flex-basis: 10%;
+  border: 0.2px solid #98adc2;
+  padding: 0 5px;
+  height: 64px;
+  border-top: none;
+  border-bottom: none;
+  text-align: center;
+}
+
+.cart-header span{
+  padding: 0 10px;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+}
+
+.user-icon {
+  flex-basis: 10%;
+  padding: 10px;
+}
+.user-icon img {
+
+  margin-left: 35px;
+}
+
+.search-header {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 60%;
+  /* height: 40; */
+}
+.search-header select, input, button {
+  padding: 10px;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+.search-header button {
+  background-color: black;
+  color: white;
+  padding: 0 25px;
+}
+
+.search-header input {
+  width: 65%;
+  text-align: left;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 5px;
+  justify-content: left;
+}
+.menu {
+  margin-right: 10px;
+  flex-basis: 20%;
+  border: 0.2px solid #5188be;
+}
+
+
+
+
+
+li {
+  list-style-type: none;
+}
+
+.menu-ul h1{
+  background-color: #336699;
+  color: white;
+}
+.menu-ul li {
+  padding: 10px;
+  border-bottom: 0.2px solid #a5caee;
+}
+
+.point {
+  position: relative;
+}
+.sub-menu {
+  position: absolute;
+  top: 0;
+  right: -44%;
+  display: none;
+  border: 0.2px solid #a5caee;
+  border-left: none;
+}
+
+.point:hover .sub-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+
+
+
+.table-item {
+  flex-basis: 78%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item{
+  width: 100%;
+  border: 1px solid #9e9e9e;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.item img {
+  width: 80px;
+  height: auto;
+}
+.buy{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+}
+.price p {
+  color: red;
+}
+
+.price span {
+  text-decoration: line-through;
+  color: silver;
+}
+.price p span {
+  background-color: red;
+  color: white;
+  padding: 0 2px;
+  margin-left: 2px;
+}
