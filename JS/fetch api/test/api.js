@@ -1,4 +1,4 @@
-const API_URL = "https://students-managerr.herokuapp.com/api/students";
+const API_URL = "https://donghohaitrieu.com/brand/orient";
 
 const getListUsers = async () => {
   try {

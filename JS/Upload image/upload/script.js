@@ -55,7 +55,7 @@ upload.addEventListener("click", (event) => {
   let formData = new FormData();
   for (const file of files) {
     if (!validImageTypes.includes(file["type"])) {
-      alert("Hiện mình chỉ hỗ trợ upload ảnh thôi nha 😖");
+      alert("Hiện mình chỉ hỗ trợ upload ảnh");
       input.value = "";
       files = [];
       notice.textContent = `${files.length} ${
