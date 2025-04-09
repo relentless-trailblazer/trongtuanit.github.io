@@ -11,6 +11,7 @@ const totalStep = messages.length;
 
 
 const messageField = document.getElementById('message');
+
 const nextBtn = document.getElementById('next');
 
 
