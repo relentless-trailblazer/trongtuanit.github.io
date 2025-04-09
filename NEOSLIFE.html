@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">k
+</head>
+<body>
+    <h1>Become neos adviser</h1>
+    <!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+     function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+    </script>
+    
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D9D0000001Gtz" method="POST">
+    
+    <input type=hidden name='captcha_settings' value='{"keyname":"David_GG_Test","fallback":"true","orgId":"00D9D0000001Gtz","ts":""}'>
+    <input type=hidden name="oid" value="00D9D0000001Gtz">
+    <input type=hidden name="retURL" value="http://">
+    
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+    <!--  these lines if you wish to test in debug mode.                          -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail" value="vttuan@cmcglobal.vn">     -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+    
+    <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+    
+    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+    
+    <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+    
+    <label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+    
+    <label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
+    
+    <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+    
+    <label for="salutation">Salutation</label><select  id="salutation" name="salutation"><option value="">--None--</option><option value="Mr.">Mr.</option>
+    <option value="Ms.">Ms.</option>
+    <option value="Mrs.">Mrs.</option>
+    <option value="Dr.">Dr.</option>
+    <option value="Prof.">Prof.</option>
+    </select><br>
+    
+    <label for="country">Country</label><input  id="country" maxlength="40" name="country" size="20" type="text" /><br>
+    
+    <label for="street">Street</label><textarea name="street"></textarea><br>
+    
+    <label for="lead_source">Lead Source</label><select  id="lead_source" name="lead_source"><option value="">--None--</option><option value="Advertisement">Advertisement</option>
+    <option value="Customer Event">Customer Event</option>
+    <option value="Employee Referral">Employee Referral</option>
+    <option value="External Referral">External Referral</option>
+    <option value="Google AdWords">Google AdWords</option>
+    <option value="Other">Other</option>
+    <option value="Partner">Partner</option>
+    <option value="Purchased List">Purchased List</option>
+    <option value="Trade Show">Trade Show</option>
+    <option value="Webinar">Webinar</option>
+    <option value="Website">Website</option>
+    <option value="Quick Quote">Quick Quote</option>
+    </select><br>
+    
+    <div class="g-recaptcha" data-sitekey="6LfmvQ8rAAAAADf0Tjpu4zSVbzYNVpnydOUq-IcU"></div><br>
+    <input type="submit" name="submit">
+    
+    </form>
+    
+</body>
+</html>
